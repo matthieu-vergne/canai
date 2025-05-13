@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.matthieu-vergne</groupId>
+	<artifactId>canai</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>CanAI</name>
+	<description>Project to play with GenAI features.</description>
+	<inceptionYear>2025</inceptionYear>
+	<url>https://github.com/matthieu-vergne/canai</url>
+
+	<scm>
+		<connection>scm:git:git://github.com/matthieu-vergne/canai.git</connection>
+		<developerConnection>
+			scm:git:githubMatthieu:matthieu-vergne/canai.git</developerConnection>
+		<url>scm:git:git://github.com/matthieu-vergne/canai.git</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/matthieu-vergne/canai/issues/</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>CC0</name>
+			<url>http://creativecommons.org/publicdomain/zero/1.0/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Matthieu Vergne</name>
+			<email>matthieu_DOT_vergne@(nospam)gmail_DOT_com</email>
+			<url>https://github.com/matthieu-vergne</url>
+		</developer>
+	</developers>
+
+	<properties>
+		<maven.compiler.release>21</maven.compiler.release>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- VERSIONS -->
+		<hamcrest.version>3.0</hamcrest.version>
+		<jackson-databind.version>2.19.0</jackson-databind.version>
+		<junit-jupiter.version>5.12.2</junit-jupiter.version>
+		<maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
+		<!--
+		<jfreechart.version>1.5.4</jfreechart.version>
+		<plantuml.version>1.2024.3</plantuml.version>
+		<snakeyaml.version>2.1</snakeyaml.version>
+		-->
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson-databind.version}</version>
+		</dependency>
+		<!--
+		<dependency>
+			<groupId>org.jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>${jfreechart.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.plantuml</groupId>
+			<artifactId>plantuml-bsd</artifactId>
+			<version>${plantuml.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>${snakeyaml.version}</version>
+		</dependency>
+		-->
+		<!-- TEST DEPENDENCIES -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-params</artifactId>
+			<version>${junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest</artifactId>
+			<version>${hamcrest.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!--
+		-->
+	</dependencies>
+</project>
